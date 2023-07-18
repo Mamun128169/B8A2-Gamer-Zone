@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+:root {
+    --primary: #FF42A5;
+    --linear: linear-gradient(#F948B2 0%, #8758F1 100%);
+}
+
+
+/* shared styles  */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary {
+    border: none;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 2.3rem;
+    background-color: var(--primary);
+}
+
+
+
+
+/* navbar section styles */
+.navbar {
+    padding: 1.9rem 12rem;
+    justify-content: space-between;
+}
+
+.logo > img {
+    margin-right: 1rem;
+}
+
+.title-logo {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title-word {
+   color: var(--primary);
+}
+
+.navlinks li {
+    list-style: none;
+    margin-right: 1.4rem;
+}
+
+.navlinks li a, .follow-links > h6 {
+    text-decoration: none;
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.follow-links {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: .85rem 1.2rem;
+}
+
+.follow-links .youtube {
+    margin: 0 .75rem 0 1rem;
+    color: #F61C0D;
+    cursor: pointer;
+}
+
+.follow-links .tiktok {
+    margin: 0 .75rem;
+    color: black;
+    cursor: pointer;   
+}
+
+
+/* banner section styles */
+.banner {
+    margin-top: 2rem;
+    padding: 0 240px 0 0;
+    justify-content: space-between;
+}
+
+.banner-content {
+    background: url("../images/Group\ 14.png") center;
+    background-size: cover;
+    max-width: 900px;
+    max-height: 700px;
+    padding: 148px 300px 148px 248px;
+}
+
+.banner-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color:#0B0223;
+}
+
+.goat {
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.2rem;
+}
+
+.banner-description i {
+    margin-right: .5rem;
+    font-size: 20px;
+    line-height: 2rem;
+    color: #3C354F;
+}
+
+.banner-btn {
+    margin-top: 2rem;
+    gap: 1.2rem;
+    /* justify-content: space-between; */
+}
+
+.btn-1 {
+    align-self: flex-start;
+}
+
+.btn-2 {
+    align-self: flex-end;
+    background-color: #4EC5F7;
+}
