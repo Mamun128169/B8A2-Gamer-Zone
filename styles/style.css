@@ -36,6 +36,17 @@ html {
     background-color: var(--primary);
 }
 
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.section-para {
+    color: #534C64;
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin: 1.2rem 0;
+}
 
 
 
@@ -177,18 +188,6 @@ html {
     text-align: right;
 }
 
-.section-title {
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-.section-para {
-    color: #534C64;
-    font-size: .9rem;
-    line-height: 1.5rem;
-    margin: 1.2rem 0;
-}
-
 .gamer-btn {
     margin: 1.32rem 0;
 }
@@ -205,6 +204,7 @@ html {
     font-weight: 700;
 
 }
+
 
 /* Online games styles */
 .online-games {
@@ -248,6 +248,34 @@ html {
 }
 
 
+/* play-instantly section styles */
+.play-instantly {
+    display: flex;
+    align-items: center;
+    padding: 0 12rem 0 22rem;
+    margin: 6rem 0;
+    gap: 13rem;
+}
+
+.play-instant-content {
+    text-align: right;
+}
+
+.play-title {
+    font-size: 2.28rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.play-instantly-img {
+    position: relative;
+}
+
+.play-instantly-img .hang {
+    position: absolute;
+    left: -145px;
+    bottom: -35px;
+}
 
 
 
@@ -266,7 +294,7 @@ html {
 
 /* For Mobile divices */
 @media screen and (max-width: 576px) {
-    .navbar, .navlinks, .container {
+    .navbar, .navlinks, .container, .play-instantly {
         flex-direction: column;
         gap: 3rem;
     }
@@ -289,7 +317,7 @@ html {
         padding: 4rem 2rem 4rem 5rem;
     }
 
-    .banner-img img, .container-img img{
+    .banner-img img, .container-img img, .play-instantly-img img{
         width: 100%;
         margin: 2rem 0;
     }
@@ -305,6 +333,24 @@ html {
     .game {
         text-align: center;
     }
+
+    .play-instantly {
+        padding: 2rem;
+    }
+
+    .play-instant-content {
+        text-align: center;
+    }
+
+    .play-title {
+        line-height: 40px;
+    }
+
+    .hang {
+        width: 100px;
+        display: none;
+    }
+
 
 
 }
