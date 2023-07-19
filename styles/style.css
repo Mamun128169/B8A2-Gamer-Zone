@@ -255,8 +255,8 @@ html {
 .layer {
     /* font-size: 2rem; */
     border-radius: 16px;
-    /* background: transparent; */
-    background: linear-gradient(0deg, rgba(18, 17, 17, 0.6) 0%,rgba(20, 20, 20, 0.6));
+    background: transparent;
+    /* background: linear-gradient(0deg, rgba(18, 17, 17, 0.6) 0%,rgba(20, 20, 20, 0.6)); */
     width: 100%;
     height: 78%;
     position: absolute;
@@ -277,7 +277,7 @@ html {
     /* transform: translateX(-50%); */
     color: white;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     transition: .7s;
 }
 .layer i {
@@ -292,7 +292,7 @@ html {
     /* transform: translateX(-50%); */
     color: rgb(240, 39, 73);
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     transition: .7s;
 }
 
