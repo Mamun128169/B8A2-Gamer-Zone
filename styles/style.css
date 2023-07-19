@@ -243,7 +243,10 @@ html {
 
 .game {
     text-align: left;
-    position: relative
+}
+
+.game .game-img {
+    position: relative;
 }
 
 .game > p {
@@ -253,12 +256,10 @@ html {
 }
 
 .layer {
-    /* font-size: 2rem; */
     border-radius: 16px;
     background: transparent;
-    /* background: linear-gradient(0deg, rgba(18, 17, 17, 0.6) 0%,rgba(20, 20, 20, 0.6)); */
     width: 100%;
-    height: 78%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -269,11 +270,10 @@ html {
     width: 100%;
     font-weight: 600;
     color: #fff;
-    font-size: 2rem;
-    bottom: 0;
+    font-size: 40px;
     left: 50%;
     top: 50%;
-    transform: translate(-30%, 10%);
+    transform: translate(-30%, 30%);
     /* transform: translateX(-50%); */
     color: white;
     position: absolute;
@@ -284,11 +284,10 @@ html {
     width: 100%;
     font-weight: 600;
     color: #fff;
-    font-size: 4rem;
-    bottom: 0;
+    font-size: 80px;
     left: 50%;
     top: 50%;
-    transform: translate(-11%, -35%);
+    transform: translate(-11%, -105%);
     /* transform: translateX(-50%); */
     color: rgb(240, 39, 73);
     position: absolute;
@@ -503,7 +502,6 @@ footer {
     }
 
     .hang {
-        width: 100px;
         display: none;
     }
 
@@ -531,6 +529,9 @@ footer {
         text-align: center;
     }
 
+    .layer {
+        display: none;
+    }
 
 }
 
@@ -618,6 +619,10 @@ footer {
         text-align: center;
     }
 
+    .layer {
+        display: none;
+    }
+
 }
 
 /* For large devices */
@@ -668,5 +673,9 @@ footer {
 
     .container-img img {
         width: 120%;
+    }
+
+    .layer {
+        display: none;
     }
 }
