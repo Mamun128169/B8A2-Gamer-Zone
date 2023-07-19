@@ -143,6 +143,10 @@ html {
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 1.2rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .banner-description {
@@ -239,12 +243,70 @@ html {
 
 .game {
     text-align: left;
+    position: relative
 }
 
 .game > p {
     font-weight: 500;
     font-size: 1rem;
     color: #534C64;
+}
+
+.layer {
+    /* font-size: 2rem; */
+    border-radius: 16px;
+    background: transparent;
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.layer h5 {
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+    bottom: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-22%, 10%);
+    /* transform: translateX(-50%); */
+    color: white;
+    position: absolute;
+    opacity: 0;
+    transition: .7s;
+}
+.layer i {
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 4rem;
+    bottom: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-10%, -23%);
+    /* transform: translateX(-50%); */
+    color: rgb(240, 39, 73);
+    position: absolute;
+    opacity: 0;
+    transition: .7s;
+}
+
+.layer:hover h5 {
+    opacity: 1;
+}
+
+.layer:hover i{
+    opacity: 1;
+}
+
+
+
+.layer:hover {
+    background: linear-gradient(0deg, rgba(18, 17, 17, 0.6) 0%,rgba(20, 20, 20, 0.6));
 }
 
 
@@ -297,7 +359,7 @@ html {
     display: flex;
     align-items: center;
     gap: 14px;
-    padding: .8rem 1rem;
+    padding: .6rem 1rem;
     border-radius: 50px;
     background: #FFF;
     cursor: pointer;
@@ -385,7 +447,7 @@ footer {
 
 /* Responsive Media Queries */
 
-/* For Mobile divices */
+/* For Mobile devices */
 @media screen and (max-width: 576px) {
     .navbar, .navlinks, .container, .play-instantly {
         flex-direction: column;
@@ -469,4 +531,141 @@ footer {
     }
 
 
+}
+
+
+/* For Tablets devices */
+@media screen and (min-width:576px) and (max-width:780px) {
+    html {
+        font-size: 120%;
+    }
+
+    .navbar, .navlinks, .container, .play-instantly {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .navbar {
+        padding: 4rem 0;
+        margin: 0 auto;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        padding: 0 1rem;
+    }
+
+    .banner-content {
+        padding: 4rem 1rem 4rem 2.5rem;
+    }
+
+    .banner-img img, .container-img img, .play-instantly-img img{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .games-container {
+        flex-wrap: wrap;
+    }
+
+    .game {
+        text-align: center;
+    }
+
+    .play-instantly {
+        padding: 1rem;
+    }
+
+    .play-instant-content {
+        text-align: center;
+    }
+
+    .play-title {
+        line-height: 40px;
+    }
+
+    .hang {
+        width: 100px;
+        display: none;
+    }
+
+    .btn-container {
+        padding: 4rem 0;
+        gap: 15px;
+    }
+
+    .btn-content {
+        padding: 5px 5px;
+        gap: 5px;
+    }
+
+    .footer-links, .social-links, .terms-links {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer-para {
+        text-align: center;
+    }
+
+}
+
+/* For large devices */
+@media screen and (min-width:780px) and (max-width:960px) {
+    html {
+        font-size: 80%;
+    }
+
+    .navbar {
+        padding: 1.9rem 6rem;
+    }
+
+    .banner {
+        margin-top: 2rem;
+        padding: 0 40px 0 0;
+        gap: 40px;
+    }
+    
+    .banner-content {
+        padding: 148px 150px 148px 88px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .games-container {
+        flex-wrap: wrap;
+    }
+
+    .play-instantly {
+        padding: 0 1.5rem;
+        gap: 4.5rem;
+    }
+
+    .hang {
+        display: none;
+    }
+
+    .play-instantly-img img {
+        width: 100%;
+    }
+
+    .container {
+        padding: 2.5rem 1rem;
+        gap: 1rem;
+    }
+
+    .container-img img {
+        width: 120%;
+    }
 }
