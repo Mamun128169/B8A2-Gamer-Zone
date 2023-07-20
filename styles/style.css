@@ -679,3 +679,33 @@ footer {
         display: none;
     }
 }
+
+
+/* for desktop devices */
+@media screen and (min-width:1450px) and (max-width:1780px) {
+    .navbar {
+        padding: 1.9rem 8rem
+    }
+
+    .banner-content {
+        padding: 148px 250px 148px 190px;
+    }
+
+    .container {
+        gap: 2rem;
+        padding: 2.52rem 7rem;
+    }
+
+    .play-instantly {
+        padding: 0 12rem 0 8rem;
+        gap: 13rem;
+    }
+
+    .btn-container {
+        padding: 5rem 7rem;
+    }
+
+    .layer {
+        display: none;
+    }
+}
